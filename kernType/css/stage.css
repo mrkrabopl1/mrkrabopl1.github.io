@@ -1,0 +1,29 @@
+.stage {
+  position: absolute;
+  bottom: 120px;
+  left: 0;
+  top: 50px;
+  right: 0;
+}
+
+.circle {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: red;
+}
+
+
+@media (max-width: 760px) and (orientation:portrait) {
+  .stage {
+    bottom: 180px;
+  }
+}
+
+
+@media (max-width: 760px) and (orientation:landscape) { 
+  .stage {
+    bottom: 100px;
+  }
+
+}
