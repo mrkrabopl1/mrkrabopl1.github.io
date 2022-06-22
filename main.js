@@ -24,7 +24,7 @@ for (let i=0;i< btnTextArr.length;i++){
             textContArr[i].style.height=textAreaArr[i].clientHeight+"px"
         }
         else{
-            textContArr[i].style.height =" 60px"
+            textContArr[i].style.height =" 40px"
         }
 
 

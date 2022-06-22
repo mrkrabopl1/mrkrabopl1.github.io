@@ -12,7 +12,12 @@
   align-self: flex-end;
   text-align: center;
 }
-
+.mainHref{
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 24px;
+  color: white;
+}
 .button:hover {
   transition: none;
   color: var(--z15);

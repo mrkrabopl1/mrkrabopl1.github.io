@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>What the F*NT?!</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="mainStyles.css">
+    <link rel="stylesheet" href="gameStyles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+
+    <header>
+        <div>
+            <a href="index.html"><h3>What the <span class="logo">F*NT?!</span></h3></a>
+        </div>
+    
+        <div>
+            <span class="score-num">0</span>
+            <br/>Score
+        </div>
+
+        <a href="#" class="reset">
+                <i class="fas fa-redo"></i>
+                <br/>Restart
+            </a>
+
+        <a href="index.html">
+                <i class="fas fa-home"></i>
+                <br/>Home
+            </a>
+    </header>
+
+    <section class="game-over wrapper"> 
+        <span class="final-score"></span>
+        <br/><span class="replay-prompt">Play again?</span>
+        <nav>
+            <a href="#" class="serif-version">Serif</a>
+            <a href="#" class="sans-serif-version">Sans Serif</a>
+        </nav>
+    </section>
+
+    <main class="game-board">
+        <section class="question">
+            <img src="#" class="sentence" alt="Determine the font of this sentence.">
+            <div class="query">What font is this?</div>
+        </section>
+        <section class="answers">
+            <a href="#" data-answer-num="1"></a>
+            <a href="#" data-answer-num="2"></a>
+            <a href="#" data-answer-num="3"></a>
+            <a href="#" data-answer-num="4"></a>
+        </section>
+        <div class="result-wrapper">
+            <div class="result-box">
+                <span class="result-text">Result</span>
+                <br/><a href="#" class="next-question">Next question</a>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div><span class="current-question-num">#</span>/<span class="total-num-questions">#</span></div>
+    </footer>
+    <script src="gameLogic.js"></script>
+</body>
+</html>

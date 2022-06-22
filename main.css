@@ -11,7 +11,7 @@ body{
 
 }
 .mImg{
-    width: 30%;
+    width: 20%;
 
     padding: 10px;
 }
@@ -21,7 +21,7 @@ body{
 }
 .mA{
     font-family: "Roboto";
-    font-size: 36px;
+    font-size: 30px;
     color: white;
     text-decoration: none;
     padding: 0 20px;
@@ -60,12 +60,13 @@ body{
 }
 .usHr{
     padding: 5%;
+    margin: 0 15%;
 }
 .telegram_href{
-    background: url("telegramm.svg") no-repeat center;
+    background: url("telegram.png") no-repeat center;
     background-size: contain;
 
-    margin: 0 15%;
+
 
 
 }
@@ -73,6 +74,7 @@ body{
     display: flex;
     width: 40%;
     justify-content: center;
+    margin-bottom: 1%;
 }
 .footer_pssuq{
     color: white;
@@ -163,13 +165,13 @@ body{
 }
 .behance_href{
     display: block;
-    background: url("behance.svg") no-repeat center;
+    background: url("behance.png") no-repeat center;
     background-size: contain;
-    padding: 10% ;
+
 }
 .vk_href{
     display: block;
-    background: url("vk.svg") no-repeat center;
+    background: url("vk.png") no-repeat center;
     background-size: contain;
 
 }
@@ -198,12 +200,12 @@ body{
 }
 .gImg1{
 
-    background: url("Q.png") center no-repeat;
+    background: url("3.png") center no-repeat;
     background-size: contain;
 }
 .gImg2{
 
-    background: url("3.png") center no-repeat;
+    background: url("image.png") center no-repeat;
     background-size: contain;
 }
 .gImg3{
@@ -213,7 +215,7 @@ body{
 }
 .gImg4{
 
-    background: url("image.png") center no-repeat;
+    background: url("Q.png") center no-repeat;
     background-size: contain;
 }
 .start{

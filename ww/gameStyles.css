@@ -1,0 +1,144 @@
+body{
+    flex-direction: column;
+    justify-content: space-between;
+    animation: pageFadeIn 2s;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    animation: none;
+    width: 100%;
+}
+
+header > *{
+    text-decoration: none;
+    font-size: 25px;
+    margin: 10px;
+    color: #333;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header h3{
+    font-size: 30px;
+    text-align: left;
+    font-family: serif;
+    color: black;
+    margin-left: 15px;
+}
+
+header a{
+    text-decoration: none;
+}
+
+.logo{
+    color:  #8d021f;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+header i, header .score-num{
+    color: #8d021f;
+    font-weight: bold;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.question{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.sentence{
+    max-width: 650px;
+}
+
+.query{
+    font-size: 20px;
+    font-family: 'Ubuntu';
+    color: #333;
+}
+.answers{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 0;
+}
+
+.answers a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+}
+
+.result-wrapper{
+    height: 40px;
+}
+
+.result-box{
+    font-family: 'Ubuntu';
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    display: none;
+}
+
+.next-question{
+    text-decoration: none;
+    color: purple;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-size: 20px;
+    font-family: 'Ubuntu';
+}
+
+.game-over{
+    display: none;
+    text-align: center;
+    color:  #8d021f;
+}
+
+.final-score{
+    font-weight: bold;
+}
+
+.game-over nav{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.game-over a{
+    width: 115px;
+}
+
+.replay-prompt{
+    font-family: 'Ubuntu';
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+@keyframes pageFadeIn{
+    from {
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 100%;
+    }
+}
