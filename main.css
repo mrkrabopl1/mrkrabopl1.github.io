@@ -1,0 +1,273 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+
+    background-color: #252630;
+}
+
+.footer{
+
+}
+.mImg{
+    width: 30%;
+
+    padding: 10px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.mA{
+    font-family: "Roboto";
+    font-size: 36px;
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+}
+.content{
+   display: flex;
+    justify-content: center;
+    margin-top:5%;
+
+
+}
+.gameCont{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.game{
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.text{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+
+}
+.usHr{
+    padding: 9%;
+}
+.telegram_href{
+    background: url("telegramm.svg") no-repeat center;
+    background-size: contain;
+
+    margin: 0 15%;
+
+
+}
+.userHref{
+    display: flex;
+    width: 40%;
+}
+.footer_pssuq{
+    color: white;
+    font-family: Roboto;
+    font-size: 20px;
+    padding-left: 2%;
+    margin-bottom: 1%;
+    margin-top: auto;
+}
+.footer_content{
+    margin: 5%   auto;
+
+
+    display: flex;
+   width:  80%
+}
+.textField{
+    margin: auto;
+    width: 50%;
+}
+.content_cont{
+    display: flex;
+    justify-content: right;
+
+}
+.ltrImg{
+    width: 50%;
+}
+.letter1{
+    margin: auto 0;
+
+    background: url("psImg.png") no-repeat center;
+    background-size: contain;
+
+}
+.letArr{
+    padding: 20%;
+}
+.descriptions{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 30px;
+}
+.footer_href{
+    display: flex;
+    justify-content: space-between;
+
+}
+.aboutUs{
+
+    color: white;
+    font-family: Roboto;
+    font-size: 28px;
+}
+.textField_main{
+    color: white;
+    font-family: Roboto;
+    font-size: 22px;
+}
+.letter2{
+
+
+    background: url("sImg.png") no-repeat center;
+    background-size: contain;
+
+}
+.letter3{
+
+
+
+    background: url("uImg.png") no-repeat center;
+    background-size: contain;
+
+}
+.letter4{
+
+    background: url("qImg.png") no-repeat center;
+    background-size: contain;
+
+}
+.back{
+    color: white;
+    font-size:18px;
+    font-family: Roboto;
+    padding-right: 3%;
+    margin-bottom: 1%;
+    margin-top: auto;
+}
+.behance_href{
+    display: block;
+    background: url("behance.svg") no-repeat center;
+    background-size: contain;
+    padding: 10% ;
+}
+.vk_href{
+    display: block;
+    background: url("vk.svg") no-repeat center;
+    background-size: contain;
+
+}
+.footer{
+    background-color: #252630;
+}
+.openText{
+    position: absolute;
+    width:100%;
+    height: 30px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 0px;
+    bottom: 0;
+    color: transparent;
+    text-align: center;
+
+}
+.textCont{
+    position: relative;
+    height: 40px;
+    overflow: hidden;
+}
+.gImg{
+    padding: 50%;
+}
+.gImg1{
+
+    background: url("Q.png") center no-repeat;
+    background-size: contain;
+}
+.gImg2{
+
+    background: url("3.png") center no-repeat;
+    background-size: contain;
+}
+.gImg3{
+
+    background: url("3.png") center no-repeat;
+    background-size: contain;
+}
+.gImg4{
+
+    background: url("image.png") center no-repeat;
+    background-size: contain;
+}
+.start{
+    font-weight: bold;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    font-family: "Roboto";
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding:10px 20px;
+    border-radius: 5px;
+}
+.mText{
+    text-align: center;
+    font-family: "Roboto";
+    padding-bottom: 3%;
+    font-weight: bold;
+    font-size: 70px;
+
+    color: white;
+    width: 300px;
+    border-bottom: solid 3px white;
+
+}
+@media (max-width: 900px) {
+    .start{
+        font-size: 14px;
+
+        padding: 5px 20px;
+    }
+    .mA{
+        font-size: 15px;
+
+    }
+    .game{
+        width: 40%;
+    }
+}
+@media (max-width: 600px) {
+    .textField_main{
+        font-size: 13px;
+    }
+    .aboutUs{
+        font-size:21px ;
+    }
+    .mA{
+        padding: 0 8px;
+    }
+    .ltrImg{
+        padding-top: 20%;
+    }
+}
+@media (max-width: 400px) {
+    .textField_main{
+        font-size: 11px;
+    }
+    .aboutUs{
+        font-size:16px ;
+    }
+    .game{
+        width: 70%;
+    }
+}
