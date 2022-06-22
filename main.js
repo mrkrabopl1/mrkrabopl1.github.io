@@ -22,9 +22,11 @@ for (let i=0;i< btnTextArr.length;i++){
     btnTextArr[i].addEventListener("click",()=>{
         if(textAreaArr[i].clientHeight!== textContArr[i].clientHeight){
             textContArr[i].style.height=textAreaArr[i].clientHeight+"px"
+            btnTextArr[i].innerHTML="&#5169"
         }
         else{
             textContArr[i].style.height =" 40px"
+            btnTextArr[i].innerHTML="&#5167"
         }
 
 

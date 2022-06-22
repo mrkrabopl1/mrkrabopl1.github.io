@@ -1,4 +1,9 @@
-
+.mainHref{
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 24px;
+  color: white;
+}
 .drawer {
   transition: all var(--transition-duration) ease;
   transform: translate(0, -100%);
