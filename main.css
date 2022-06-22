@@ -52,7 +52,7 @@ body{
 
 }
 .usHr{
-    padding: 9%;
+    padding: 5%;
 }
 .telegram_href{
     background: url("telegramm.svg") no-repeat center;
@@ -65,6 +65,7 @@ body{
 .userHref{
     display: flex;
     width: 40%;
+    justify-content: center;
 }
 .footer_pssuq{
     color: white;
@@ -200,7 +201,7 @@ body{
 }
 .gImg3{
 
-    background: url("3.png") center no-repeat;
+    background: url("fontGame.PNG") center no-repeat;
     background-size: contain;
 }
 .gImg4{
