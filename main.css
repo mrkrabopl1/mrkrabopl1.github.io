@@ -51,6 +51,13 @@ body{
     right: 0;
 
 }
+.headText{
+    font-size: 32px;
+    font-family: Roboto;
+    color: white;
+    padding: 0 20% 10%;
+    margin: auto;
+}
 .usHr{
     padding: 5%;
 }
