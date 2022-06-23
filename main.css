@@ -208,12 +208,12 @@ body{
 }
 .gImg1{
 
-    background: url("3.png") center no-repeat;
+    background: url("form.jpg") center no-repeat;
     background-size: contain;
 }
 .gImg2{
 
-    background: url("image.png") center no-repeat;
+    background: url("color.jpg") center no-repeat;
     background-size: contain;
 }
 .gImg3{
@@ -223,7 +223,7 @@ body{
 }
 .gImg4{
 
-    background: url("Q.png") center no-repeat;
+    background: url("kern.jpg") center no-repeat;
     background-size: contain;
 }
 .start{
