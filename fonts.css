@@ -1,0 +1,18 @@
+/** Monseratt **/
+@font-face {
+	font-family: 'Monseratt';
+	src: url('fonts/Montserrat-SemiBold.eot');
+	src: local('☺'), url('fonts/Montserrat-SemiBold.woff') format('woff'), url('fonts/Montserrat-SemiBold.ttf') format('truetype'), url('fonts/Montserrat-SemiBold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat Regular';
+	src: url('fonts/montserrat_regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('fonts/montserrat_regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+	url('fonts/montserrat_regular.woff2') format('woff2'), /* Super Modern Browsers */
+	url('fonts/montserrat_regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+	url('fonts/montserrat_regular.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('fonts/montserrat_regular.svg#montserrat_regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
