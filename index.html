@@ -8,6 +8,27 @@
 
 </head>
 <body>
+<div class="activeBlockCont">
+	<div class="activeBlock">
+		<div class="cont_close">
+			<div class="close"></div>
+		</div >
+		<div class="activeBlock_thanks-cont">
+			<p class="activeBlock_thanks">Спасибо</p>
+			<p class="activeBlock_thanks1">Ваша заявка принята </p>
+			<p class="activeBlock_thanks3">Ожидайте звонка специалиста</p>
+		</div>
+		<div class="activeBlock_input-cont">
+			<input class="activeBlock_input" placeholder="Имя" type="text">
+			<input class="activeBlock_input" placeholder="Ваш телефон" type="text">
+		</div>
+
+
+		<button class="activeBlock_button">Записаться</button>
+		<p class="activeBlock_text">Мы перезвоним вам в течении 5 мин</p>
+	</div>
+</div>
+
 <div class="first-page">
 	<div  class="first-page_burger-cont">
 		<div class="first-page_burger">
@@ -43,7 +64,7 @@
 		<p class="first-page_main_info">Полировка, химчистка своими руками или руками наших мастеров 24/7</p>
 		<p class="first-page_main_price">От <span style="color: #74BAA0">500 рублей за 1 час</span></p>
 		<div class="first-page_but-cont">
-			<button  class="first-page_button">Связаться с нами</button>
+			<button  class="callUs first-page_button">Связаться с нами</button>
 			<a class="first-button_a" href="">Связаться с нами</a>
 		</div>
 		<div class="first_resize first-page_link-cont">
@@ -92,6 +113,43 @@
 		<div>
 
 		</div>
+		<div class="second-page_slider" >
+			<div class="second-page_cont" >
+				<p class="second-page_cont-title">Химчистка</p>
+
+				<ul class="second-page_cont-ul">
+					<li>Детейлинг химчистка интерьера </li>
+					<li>Удаление пятен</li>
+					<li>Устранение запахов</li>
+					<li> Деликатная чистка кожи</li>
+					<li> Удаление стойких загрязнений глиной</li>
+					<li> Обезжиривание кузова Чистка дисков</li>
+				</ul>
+			</div>
+			<div class="second-page_cont" >
+				<p class="second-page_cont-title">Плироовка</p>
+
+				<ul class="second-page_cont-ul">
+					<li> Полировка элементов салона </li>
+					<li>Детейлинг полировка ЛКП </li>
+					<li>Полировка оптики</li>
+					<li>Полировка дисков</li>
+					<li> Глубокая полировка</li>
+					<li> Восстановительная полировка</li>
+				</ul>
+			</div>
+			<div class="second-page_cont" >
+				<p class="second-page_cont-title">Дополнительные услуги</p>
+
+				<ul class="second-page_cont-ul">
+					<li> <span> Керамика для кузова</span> <span style="color: #74BAA0">6000 руб</span> </li>
+					<li>Твердый воск <span style="color: #74BAA0">1200 руб</span></li>
+					<li>Антидождь <span style="color: #74BAA0">350 руб</span></li>
+					<li> Чистка дисков IronOFF <span style="color: #74BAA0">400 руб</span></li>
+					<li>Чистка кузова IronOFF <span style="color: #74BAA0">800 руб</span></li>
+				</ul>
+			</div>
+		</div>
 		<div class="second-page_resize">
 			<div  class="second-page_info-cont">
 				<div class="second-page_cont" >
@@ -132,12 +190,12 @@
 				</ul>
 			</div>
 		</div>
-		<button class="second-page_but">Связаться с нами</button>
+		<button class="callUs second-page_but">Связаться с нами</button>
 	</div>
 </div>
 <div class="third-page">
 	<div class="third-page_wrap">
-		<div>
+		<div class="third-page_label-resize">
 			<p class="third-page_title">Акции</p>
 			<div class="third-resize third-page_scroller">
 				<button class="third-page_leftArr"></button>
@@ -171,7 +229,7 @@
                         Акция действует до 07.09.2022
                     </div>
                 </div>
-                <button  class="third-page_button">Связаться с нами</button>
+                <button  class="callUs third-page_button">Связаться с нами</button>
                 <div class="third-resize_main third-page_scroller">
                     <button class="third-page_leftArr"></button>
 					<div  class="third-page_flag-cont">
@@ -200,7 +258,7 @@
 					Забронируйте бокс на удобное для вас время
 				</div>
 			</div>
-			<button class="forth-page_button">Связаться с нами</button>
+			<button class="callUs forth-page_button">Связаться с нами</button>
 
 		</div>
 		<div  class="forth-page_text-cont">
@@ -217,7 +275,7 @@
 			Забронируйте бокс на удобное для вас время
 		</div>
 	</div>
-	<button class="resize  forth-page_button">Связаться с нами</button>
+	<button class="callUs resize forth-page_button">Связаться с нами</button>
 </div>
 <div class="fifth-page">
 	<div class="fifth-page_cont">
@@ -237,16 +295,29 @@
 <div class="sixth-page">
 	<div class="sixth-page_label">Галерея</div>
 		<div class="sixth-page_cont_resize">
-			<div class="sixth-page_gallery-cont_resize">
+			<div class="sixth-page_cont_resize_ar">
+				<div  class="al second-page_arrow-cont">
+					<p class="second-page_arrow-text">slide</p>
+					<div class="second-page_arrow-left" ></div>
+				</div>
+				<div class="ar second-page_arrow-cont">
+					<p class="second-page_arrow-text">slide</p>
+					<div class="second-page_arrow-right" ></div>
+				</div>
+			</div>
 
-				<div class="gallery1 sixth-page_gallery-img" ></div>
-				<div class="gallery2 sixth-page_gallery-img"></div>
-				<div class="gallery3 sixth-page_gallery-img" ></div>
-				<div  class="gallery4 sixth-page_gallery-img " ></div>
-				<div class="gallery5 sixth-page_gallery-img" ></div>
+			<div class="sixth-page_gallery-cont_resize">
+				<div class="sixth-page_gallery-cont_slider">
+					<div class="gallery1 sixth-page_gallery-img" ></div>
+					<div class="gallery2 sixth-page_gallery-img"></div>
+					<div class="gallery3 sixth-page_gallery-img" ></div>
+					<div  class="gallery4 sixth-page_gallery-img " ></div>
+					<div class="gallery5 sixth-page_gallery-img" ></div>
+				</div>
+
+
 			</div>
 			<div class="sixth-page_gallery-text-cont ">
-
 				<div class="sixth-page_gallery-text ">
 					<p class="sixth-page_gallery-text-main">Мы в инстаграм</p>
 					<p class="sixth-page_gallery-text-mail">@easy.detail</p>
@@ -293,7 +364,7 @@
 			<img src="img/map.png" alt="">
 		</div>
 		<div class="seventh-page_cont-block">
-			<div> Мы обязательно обработаем вашу заявку и свяжемся с вами в течении 5 минут</div>
+			<div class="seventh-page_callback" > Мы обязательно обработаем вашу заявку и свяжемся с вами в течении 5 минут</div>
 			<div class="seventh-page_top-input">
 				<input class="seventh-page_top seventh-page_input" placeholder="имя" type="text">
 				<input class="seventh-page_top seventh-page_input" placeholder="телефон" type="text">
@@ -326,7 +397,14 @@
 			<a class="footer_a-min" href="">vk</a>
 			<a class="footer_a-min" href="">telegram</a>
 		</div>
+		<div class="footer_resize first-page_link-cont">
+			<a class="tel first-page_icon" href=""></a>
+			<a class="inst first-page_icon" href=""></a>
+			<a class="vk first-page_icon" href=""></a>
+			<a class="wats first-page_icon" href=""></a>
+		</div>
 	</div>
+
 
 
 </div>
