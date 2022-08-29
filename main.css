@@ -60,7 +60,7 @@
     height: 100vh;
     display: none;
     background-color: rgba(35, 35, 35, 0.3);
-    z-index: 100;
+    z-index: 1001;
     font-family: "Montserrat Regular";
 
 }
@@ -96,6 +96,7 @@
 
 }
 .first-page_burger-cont{
+    display: none;
     position: absolute;
     right: 0;
     margin: 1% 7%;
@@ -156,8 +157,10 @@
     width: 40%;
 }
 .first-page_main{
+    position: relative;
+    z-index: 100;
     padding-left: 5%;
-    padding-bottom: 10%;
+    padding-bottom: 8%;
     padding-top: 5%;
 }
 .first-page_a:hover,focus{
@@ -191,14 +194,12 @@
     right: 0;
     top:0;
     height: 100%;
+    height: 100%;
     display: flex;
     justify-content: right;
 }
 .first-page_link-cont{
-    padding: 0 3% 2%;
-
-    width: 4%;
-
+    width: 8%;
     margin-top: auto;
     display: flex;
     flex-direction: column;
@@ -228,7 +229,7 @@
 }
 .first-page_icon{
     display: inline-block;
-    padding: 50%;
+    padding: 30%;
     margin: 10%;
 }
 .vk{
@@ -253,6 +254,9 @@
     background-color: #232323;
 
 }
+.secondCont{
+    display: none;
+}
 .second-page_title{
     font-size: 50px;
     color: white;
@@ -263,10 +267,11 @@
     padding: 5%;
     font-family: "Montserrat Regular";
     font-size: 20px;
+    box-sizing: border-box;
 
 }
 .second-page_pointers_resize{
-    display: flex;
+    display:none;
     justify-content: space-between;
 }
 .second-page_arrow-left{
@@ -293,6 +298,10 @@
     background-size: contain;
 
 }
+.second-page_pointers_text{
+    color: #74BAA0;
+    font-size: 25px;
+}
 .second-page_a{
     text-decoration: none;
     color: white;
@@ -314,6 +323,7 @@
     justify-content: space-between;
 }
 .second-page_resize{
+    justify-content: space-between;
     display: flex;
 }
 .second-page_info-cont{
@@ -324,18 +334,21 @@
 
 }
 .second-page_cont_under{
+    box-sizing: border-box;
     color: white;
     padding: 1%;
     border: 2px solid #FFFFFF ;
-    margin: 5px 10px;
     width: 33%;
+
+
 }
 .second-page_cont{
-    margin: 5px 10px;
+    box-sizing: border-box;
+
     padding: 1%;
     border: 2px solid #FFFFFF ;
 
-    width: 50%;
+    width: 49%;
 }
 .second-page_but{
     width: 31%;
@@ -347,6 +360,13 @@
     margin-top: 2%;
     font-size: 25px;
    margin-bottom: 5%;
+}
+.second_page_solo{
+    width: 100%;
+}
+.second-page_slider-block{
+    flex-shrink: 0;
+    width: 100%;
 }
 .second-page_cont-title{
     font-size: 30px;
@@ -371,14 +391,58 @@
     font-size: 50px;
 
 }
+.second-page_main_slider_cont{
+    position: relative;
+    overflow: hidden;
+}
+.second-page_main_slider{
+    position: relative;
+    left: 0;
+    display: flex;
+    width: 100%;
+}
 .third-page_cont{
+    flex-shrink: 0;
     display: flex;
     position: relative;
 }
+.third-page_cont{
+    width:100%
+}
+.third-page_slider{
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-shrink: 0;
+    left: 0;
+}
+.third-page_slider-cont{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
 .third-page_main-text{
+    text-transform: uppercase;
     position: absolute;
-    font-size: 100px;
+    font-size: 60px;
     color: white;
+    line-height: 60px;
+    margin: auto;
+    top:50%;
+    transform: translateY(-50%);
+}
+.third-page_discont_main{
+    background-color: white;
+}
+.third-page_discont{
+    padding: 1% 2%;
+    position: absolute;
+    left: 0;
+
+    z-index: 1;
+    width: 50%;
+    transform: translateY(-50%);
+    top:50%
 }
 .third-page_label-resize{
     display: flex;
@@ -405,6 +469,7 @@
 
 }
 .third-page_main-info-cont{
+    margin: 5%;
     display: flex;
     flex-direction: column;
 }
@@ -414,17 +479,29 @@
     background: #74BAA0;
     font-size: 25px;
 }
-.third-page_scroller{
-    margin-top: 5%;
-    display: flex;
+.third-page_slider_cont1{
+    width: 100%;
+}
+.third-page_scroller_res{
+    width: 20%;
+    margin: auto 0;
+    display: none;
     justify-content: space-between;
 }
+.third-page_scroller{
+    margin-top: 5%;
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 .third-page_flag-cont{
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 .third-page_flag{
+    margin: auto;
     padding: 5%;
     border-radius: 50%;
     background-color: rgba(35, 35, 35, 0.2);
@@ -624,14 +701,14 @@
     position: relative;
 }
 .logo-icon{
-    transform: translateY(-50%);
+    transform: translateY(-30%);
 
     position: absolute;
     display: inline-block;
     background: url("icons/logo_icon.svg") no-repeat center;
     background-size: contain;
     width: 16%;
-    height: 55px;
+    height: 37px;
 }
 .fifth-page_text{
     margin-left: 5%;
@@ -728,7 +805,7 @@
     display: flex;
 }
 .sixth-page_gallery-img{
-    padding: 16%;
+    padding: 15%;
     margin: 0 1%;
 
 }
@@ -898,6 +975,7 @@
     }
     .third-page_main-text{
         font-size: 80px;
+        line-height: 71px;
     }
     .third-page_time{
         width: 36%;
@@ -961,6 +1039,13 @@
     .third-page_info-wrap{
         flex-direction: column;
     }
+    .third-page_scroller_res{
+
+        display: flex;
+    }
+    .third-page_scroller{
+        display: none;
+    }
     .corner-box-1{
         width: 100%;
     }
@@ -978,6 +1063,9 @@
     .forth-page_book_text{
         padding: 20px;
     }
+    .second-page_pointers_resize{
+        display: flex;
+    }
     .first-page_main_detailing{
         font-size: 40px;
     }
@@ -994,7 +1082,7 @@
         width: 100%;
     }
     .second-page_cont_under{
-        width: 96%;
+        width: 100%;
     }
     .forth-page_m{
         font-size: 20px;
@@ -1071,10 +1159,6 @@
         display: flex;
         justify-content: space-between;
     }
-    .third-resize_main{
-        display: none;
-
-    }
     .third-resize{
         display: flex;
 
@@ -1089,7 +1173,7 @@
         width: 70%;
     }
     .second-page_cont_under{
-        width: 95%;
+        width:100%;
     }
     .main-resize {
         display: none;
@@ -1131,6 +1215,12 @@
         padding: 0;
         color: white;
     }
+    .firstCont{
+        display: none;
+    }
+    .secondCont{
+        display: block;
+    }
     .second-page_resize{
         display: none;
     }
@@ -1152,6 +1242,11 @@
     }
     .first-page_menu-phone{
         display: none;
+    }
+    .first-page_burger-cont{
+        display: block;
+        padding: 1%;
+        z-index: 1000;
     }
     .first-page_main_price{
         width: 45%;
