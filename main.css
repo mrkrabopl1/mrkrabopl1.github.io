@@ -741,7 +741,25 @@
 .sixth-page_cont_resize{
     display: none;
 }
+.sixth-page_arrow-right{
+    padding: 20% 0;
+    background: url("icons/grArrR.svg") center no-repeat;
+    background-size: contain;
 
+}
+.sixth-page_arrow-left{
+    padding: 20% 0;
+    background: url("icons/grArrL.svg") center no-repeat;
+    background-size: contain;
+
+}
+.sixth-page_arrow-cont{
+    width:10%
+}
+.sixth-page_arrow-text{
+    text-align: center;
+    color: #74BAA0;
+}
 .sixth-page_label{
     font-size: 50px;
     color: white;

@@ -276,6 +276,9 @@ const burgerInitialization = ()=>{
 }
 burgerInitialization()
 const initializeData=()=>{
+    let seventhPageInput = document.querySelectorAll(".seventh-page_top")
+    let seventhPageText = document.querySelector(".seventh-page_bottom-input")
+    let seventhPageButton = document.querySelector(".seventh-page_button")
     let pageButtons= document.querySelectorAll(".callUs")
     let activeBlock = document.querySelector(".activeBlockCont")
     let close = document.querySelector(".close")
@@ -304,6 +307,7 @@ const initializeData=()=>{
             for (let i of personInfo){
                 personsInfo[i.placeholder] = i.value
             }
+
             (async () => {
                 const rawResponse = await fetch('https://httpbin.org/post', {
                     method: 'POST',
@@ -333,70 +337,90 @@ const initializeData=()=>{
         body.style.overflow="visible"
 
     })
+    seventhPageButton.addEventListener("click",()=>{
+        console.log(seventhPageInput)
+        console.log(seventhPageText.value)
+        personsInfo.messege = seventhPageText.value
+        for (let i of seventhPageInput) {
+            personsInfo[i.placeholder] = i.value
+            i.value = ""
+        }
+
+        (async () => {
+            const rawResponse = await fetch('https://httpbin.org/post', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                credentials:"include",
+                body: JSON.stringify(personsInfo)
+            });
+            const content = await rawResponse.json();
+
+            console.log(content);
+        })();
+        seventhPageText.value = ""
+        flagRegistr = false
+    })
 }
 initializeData()
+const initializeGallery = ()=>{
 
-let seventhPageInput = document.querySelectorAll(".seventh-page_top")
-let seventhPageText = document.querySelector(".seventh-page_bottom-input")
-let seventhPageButton = document.querySelector(".seventh-page_button")
-let galleryLeftAr = document.querySelector(".al")
-let galleryRightAr = document.querySelector(".ar")
-let gallerySlider = document.querySelector(".sixth-page_gallery-cont_slider")
-let galleryElem = document.querySelector(".gallery1")
+    let galleryLeftAr = document.querySelector(".al")
+    let galleryRightAr = document.querySelector(".ar")
+    let gallerySlider = document.querySelector(".sixth-page_gallery-cont_slider")
+    let galleryElem = document.querySelector(".gallery1")
 
-let gallerySlides = 5
-let galleryContSize = 3
-var marginLeft = parseInt(getComputedStyle(galleryElem, true).marginLeft);
-var marginRight = parseInt(getComputedStyle(galleryElem, true).marginRight);
-let stepSize = galleryElem.offsetWidth + marginLeft + marginRight
+    let gallerySlides = 5
+    let galleryContSize = 3
+    var marginLeft = parseInt(getComputedStyle(galleryElem, true).marginLeft);
+    var marginRight = parseInt(getComputedStyle(galleryElem, true).marginRight);
+    let stepSize = galleryElem.offsetWidth + marginLeft + marginRight
 
-let gallerySlidePosition = 0
+    let gallerySlidePosition = 0
 
-let secondSliderPosition = 0
-let massageText = ""
+    let secondSliderPosition = 0
+    let massageText = ""
 
 
 
 
-galleryLeftAr.addEventListener("click",()=>{
-    let cach =  gallerySlidePosition
-    let  gallerySlidePosition1
-    if(gallerySlidePosition > 0){
-    for (let i =0; i<=100;i+=1){
-        setTimeout(()=>{
-            gallerySlidePosition1 =cach -stepSize/100*i
-        },2*i)
-    }
-    }
-    gallerySlidePosition -=stepSize
-})
-galleryRightAr.addEventListener("click",()=>{
-    let max = (gallerySlides - galleryContSize)*stepSize
-    let  gallerySlidePosition1
-    let cach =  gallerySlidePosition
-    if(gallerySlidePosition<=max){
-        for (let i =0; i<=100;i+=1){
-            setTimeout(()=>{
-                gallerySlidePosition1 =cach+stepSize/100*i
-                console.log(gallerySlidePosition1)
-                gallerySlider.style.left = "-"+gallerySlidePosition1 +"px"
-            },2*i)
+    galleryLeftAr.addEventListener("click",()=>{
+        let cach =  gallerySlidePosition
+        let  gallerySlidePosition1
+        if(gallerySlidePosition > 0){
+            for (let i =0; i<=100;i+=1){
+                setTimeout(()=>{
+                    gallerySlidePosition1 =cach-stepSize/100*i
+                    console.log(gallerySlidePosition1)
+                    gallerySlider.style.left = "-"+gallerySlidePosition1 +"px"
+                },2*i)
+            }
         }
-        gallerySlidePosition +=stepSize
+        gallerySlidePosition -=stepSize
+    })
+    galleryRightAr.addEventListener("click",()=>{
+        console.log("adsadasd")
+        let max = (gallerySlides - galleryContSize)*stepSize
+        let  gallerySlidePosition1
+        let cach =  gallerySlidePosition
+        if(gallerySlidePosition<=max){
+            for (let i =0; i<=100;i+=1){
+                setTimeout(()=>{
+                    gallerySlidePosition1 =cach+stepSize/100*i
+                    console.log(gallerySlidePosition1)
+                    gallerySlider.style.left = "-"+gallerySlidePosition1 +"px"
+                },2*i)
+            }
+            gallerySlidePosition +=stepSize
 
-    }
-})
-seventhPageButton.addEventListener("click",()=>{
+        }
+    })
 
-    for (let i of seventhPageInput) {
-        personsInfo[i.placeholder] = i.value
-        i.value = ""
-    }
-    massageText = seventhPageText.value
-    seventhPageText.value = ""
-    flagRegistr = false
-})
 
+}
+initializeGallery()
 
 let write = document.createElement("div")
 
